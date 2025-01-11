@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+:root {
+    --green: #13AB67;
+    --green10: #0C4129;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::selection {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", "Quicksand", sans-serif !important;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* Header */
+header nav {
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 75px;
+    transition: all 0.2s ease-in-out;
+    max-width: 1400px;
+    margin: auto;
+}
+
+header nav .nav-container .nav-burger {
+    display: none;
+}
+
+header nav .nav-container .nav-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav .nav-container .nav-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav .nav-container .nav-title a h1 span:nth-child(1) {
+    color: var(--green);
+}
+
+header nav .nav-container .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header nav .nav-container .nav-list li {
+    list-style: none;
+}
+
+header nav .nav-container .nav-list li a {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    padding: 2px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+header nav .nav-container .nav-list li a:hover {
+    background-color: #e7e7e7;
+    
+}
+
+header nav .nav-container .nav-list li .nav-list-login {
+    color: var(--green) !important;
+}
+
+header nav .nav-container .nav-list li .nav-list-login:hover {
+    background-color: #e7e7e7;
+}
+
+header nav .nav-container .nav-list li .nav-list-signup {
+    background-color: var(--green) !important;
+    color: #fff !important;
+}
+
+header nav .nav-container .nav-list li .nav-list-signup:hover {
+    background-color: transparent !important;
+    color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+
+header .container {
+    display: flex;
+}
+
+header .container .jumbotron {
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 70px;
+    align-items: center;
+    max-width: 1400px;
+    gap: 0.5rem;
+}
+
+header .container .jumbotron .jumbotron-content {
+    flex: 1 1;
+}
+
+header .container .jumbotron .jumbotron-content h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    /* margin-block: 0.4rem; */
+    color: var(--green10);
+   
+}
+
+header .container .jumbotron .jumbotron-content h1 span {
+    color: var(--primary);
+}
+
+header .container .jumbotron .jumbotron-content p.content-one {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    color:#3F3F42;
+}
+
+header .container .jumbotron .jumbotron-content p.content-one span {
+    background: linear-gradient(to bottom, transparent 70%, #e0f7e9 70%);
+    display: inline;
+}
+
+header .container .jumbotron .jumbotron-content p.content-two {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #626264;
+}
+
+header .container .jumbotron .jumbotron-content button {
+    padding: 0.8rem 2.5rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: var(--green);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+header .container .jumbotron .jumbotron-content button:hover {
+    background-color: #16d17d;
+}
+
+header .container .jumbotron .jumbotron-image {
+    flex: 1;
+    display: flex;
+}
+
+header .container .jumbotron .jumbotron-image img {
+    margin: auto;
+    min-width: 600px;
+    width: 100%;
+}
+/* End Header */
+
+/* Article */
+main #content article {
+    padding: 40px 70px;
+}
+/* End Article */
+
+/* Service */
+main #content .service {
+    max-width: 1400px;
+    margin: auto;
+}
+
+main #content .service .service-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--green10);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main #content .service .service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+main #content .service .service-container .service-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: stretch;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+main #content .service .service-container .service-card:hover {
+    transform: scale(1.05);
+}
+
+main #content .service .service-container .service-card img{
+    max-width: 100px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main #content .service .service-container .service-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main #content .service .service-container .service-card h2 span {
+    display: block;
+}
+
+main #content .service .service-container .service-card p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+}
+/* End Service */
+
+/* Pricing */
+main #content .pricing {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+main #content .pricing .pricing-title {
+    font-size: 1.5rem;
+    color: var(--green10);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+}
+
+.plan.advanced {
+    border: 1px solid var(--green);
+    box-shadow: 0px 4px 8px 0px var(--green);
+}
+
+.plan img {
+    width: 80px;
+    height: auto;
+}
+
+.plan h3 {
+    font-size: 1.2rem;
+    color: #14ab68;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.plan p.price {
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.plan p.detail {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.plan p.features {
+    font-size: 0.8rem;
+    text-align: start;
+    font-weight: 100;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+
+.plan ul li {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.plan .sign-up {
+    background-color: #ffffff;
+    color: var(--green);
+    border: 2px solid var(--green);
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.plan .sign-up:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.bread-image {
+    width: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.money-back {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+/* End Pricing */
+
+/* About */
+main #content .about {
+    max-width: 1400px;
+    margin: auto;
+}
+
+main #content .about .about-title {
+    font-size: 1.5rem;
+    color: var(--green10);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main #content .about .about-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    padding: 0 30px;
+}
+
+main #content .about .about-container .about-content {
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 60%;
+    
+}
+
+main #content .about .about-container  aside h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--green10);
+}
+
+main #content .about .about-container .about-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+main #content .about .about-container .about-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.62), 1px 0px 0px 0px rgba(0, 0, 0, 0.62),
+    1px 2px 0px 0px rgba(0, 0, 0, 0.62), 2px 1px 0px 0px rgba(0, 0, 0, 0.62),
+    2px 3px 0px 0px rgba(0, 0, 0, 0.62), 3px 2px 0px 0px rgba(0, 0, 0, 0.62),
+    3px 4px 0px 0px rgba(0, 0, 0, 0.62), 4px 3px 0px 0px rgba(0, 0, 0, 0.62),
+    4px 5px 0px 0px rgba(0, 0, 0, 0.62), 5px 4px 0px 0px rgba(0, 0, 0, 0.62),
+    5px 6px 0px 0px rgba(0, 0, 0, 0.62), 6px 5px 0px 0px rgba(0, 0, 0, 0.62),
+    6px 7px 0px 0px rgba(0, 0, 0, 0.62), 7px 6px 0px 0px rgba(0, 0, 0, 0.62),
+    7px 8px 0px 0px rgba(0, 0, 0, 0.62), 8px 7px 0px 0px rgba(0, 0, 0, 0.62);
+}
+/* End About */
+
+/* Footer */
+footer {
+    background-color: #454D4A;
+    color: #fff;
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+/* End Footer */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 9999; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--green); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+    font-weight: bold;
+  }
+  
+  #myBtn:hover {
+    background-color: #bebebe; /* Add a dark-grey background on hover */
+  }
+
+/* Media Query */
+@media screen and (max-width: 1000px) {
+    header nav .nav-container .nav-list {
+        position: absolute;
+        z-index: -999;
+        background-color: rgba(255, 255, 255, 1);
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-100%);
+    }
+
+    header nav .nav-container .nav-list.slide {
+        transform: translateX(0);
+    }
+
+    header nav .nav-container .nav-burger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    header nav .nav-container .nav-burger .fas.fa-bars {
+        font-size: 2rem;
+    }
+
+    header .container .jumbotron {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+    }
+
+    header .container .jumbotron .jumbotron-content h1 {
+        font-size: 2rem;
+        margin-block: 0.4rem;
+    }
+
+
+    header .container .jumbotron .jumbotron-content button {
+        padding: 0.6rem 2rem;
+        margin-block-start: 1rem;
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+
+    header .container .jumbotron .jumbotron-image img {
+        margin: auto;
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    main #content .about .about-container {
+        flex-direction: column;
+    }
+
+    main #content .about .about-container .about-content {
+        width: 100%;
+        text-align: justify;
+    }
+
+    main #content .about .about-container .about-image img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header .container .jumbotron {
+        margin-top: 6rem;
+        padding: 0 1rem;
+        flex-direction: column;
+    }
+
+    header .container .jumbotron .jumbotron-content h1 {
+        font-size: 1.8rem;
+        margin-block: 0.4rem;
+    }
+
+    header .container .jumbotron .jumbotron-image {
+        order: -1;
+    }
+
+    main #content article {
+        padding: 40px 14px;
+    }
+
+    main #content .service .service-container .service-card {
+        width: 100%;
+    }
+
+    .plan {
+        width: 100%;
+    }
+
+    main #content .about .about-container {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    main #content .about .about-container .about-content {
+        width: 100%;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+/* End Media QUery */
+
+
