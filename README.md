@@ -1,8 +1,5 @@
 # Proyek HTML, CSS (Flexbox), dan JavaScript
 
-📖 **Tentang Proyek**  
-Proyek ini merupakan bagian dari tugas akhir dalam kursus "Belajar Dasar Pemrograman Web" di Dicoding. Proyek ini bertujuan untuk mengasah pemahaman dalam penggunaan HTML, CSS (khusus Flexbox), dan JavaScript untuk membangun halaman web yang responsif dan fungsional.
-
 🛠 **Teknologi yang Digunakan**  
 - **HTML**: Untuk membangun struktur konten.  
 - **CSS (Flexbox)**: Untuk mengatur tata letak dan gaya halaman.  
